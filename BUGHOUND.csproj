@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35FB7849-6D40-4197-AF57-F88F18CB8C5A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BUGHOUND</RootNamespace>
+    <AssemblyName>BUGHOUND</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AddEmploye.aspx" />
+    <Content Include="ADDEmployee.aspx" />
+    <Content Include="ADDFunctionalArea.aspx" />
+    <Content Include="ADDNEWBUGDetails.aspx" />
+    <Content Include="AddNewBugForm.aspx" />
+    <Content Include="ADDNewBugReport.aspx" />
+    <Content Include="AddNewBugReports.aspx" />
+    <Content Include="ADDProgram.aspx" />
+    <Content Include="AdminForm.aspx" />
+    <Content Include="DatabaseMaintaince.aspx" />
+    <Content Include="DeleteEmployee.aspx" />
+    <Content Include="EmployeeLogin.aspx" />
+    <Content Include="Employeemain.aspx" />
+    <Content Include="EmployeeManagement.aspx" />
+    <Content Include="EmpSearchBugId.aspx" />
+    <Content Include="firm1.aspx" />
+    <Content Include="FrmSearch.aspx" />
+    <Content Include="FunctionalArea.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\bug hound.jpg" />
+    <Content Include="Images\calender.jpg" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="ModifyBugReport.aspx" />
+    <Content Include="ModifyBugReports.aspx" />
+    <Content Include="ModifyEmployee.aspx" />
+    <Content Include="ModifyFunctional.aspx" />
+    <Content Include="ModifyProgram.aspx" />
+    <Content Include="ProgramMaintaince.aspx" />
+    <Content Include="SearchBugId.aspx" />
+    <Content Include="SearchBugReport.aspx" />
+    <Content Include="SearchBy Id.aspx" />
+    <Content Include="SearchByBgid.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UPDATE BasedID.aspx" />
+    <Content Include="UpdateEmployee.aspx" />
+    <Content Include="View Bug Report.aspx" />
+    <Content Include="ViewEmployee.aspx" />
+    <Content Include="ViewFunctional.aspx" />
+    <Content Include="ViewProgram.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmploye.aspx.cs">
+      <DependentUpon>AddEmploye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmploye.aspx.designer.cs">
+      <DependentUpon>AddEmploye.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDEmployee.aspx.cs">
+      <DependentUpon>ADDEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDEmployee.aspx.designer.cs">
+      <DependentUpon>ADDEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDFunctionalArea.aspx.cs">
+      <DependentUpon>ADDFunctionalArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDFunctionalArea.aspx.designer.cs">
+      <DependentUpon>ADDFunctionalArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDNEWBUGDetails.aspx.cs">
+      <DependentUpon>ADDNEWBUGDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDNEWBUGDetails.aspx.designer.cs">
+      <DependentUpon>ADDNEWBUGDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewBugForm.aspx.cs">
+      <DependentUpon>AddNewBugForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewBugForm.aspx.designer.cs">
+      <DependentUpon>AddNewBugForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDNewBugReport.aspx.cs">
+      <DependentUpon>ADDNewBugReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDNewBugReport.aspx.designer.cs">
+      <DependentUpon>ADDNewBugReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewBugReports.aspx.cs">
+      <DependentUpon>AddNewBugReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewBugReports.aspx.designer.cs">
+      <DependentUpon>AddNewBugReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDProgram.aspx.cs">
+      <DependentUpon>ADDProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDProgram.aspx.designer.cs">
+      <DependentUpon>ADDProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.aspx.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminForm.aspx.designer.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseMaintaince.aspx.cs">
+      <DependentUpon>DatabaseMaintaince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseMaintaince.aspx.designer.cs">
+      <DependentUpon>DatabaseMaintaince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEmployee.aspx.cs">
+      <DependentUpon>DeleteEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteEmployee.aspx.designer.cs">
+      <DependentUpon>DeleteEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLogin.aspx.cs">
+      <DependentUpon>EmployeeLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeLogin.aspx.designer.cs">
+      <DependentUpon>EmployeeLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employeemain.aspx.cs">
+      <DependentUpon>Employeemain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employeemain.aspx.designer.cs">
+      <DependentUpon>Employeemain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement.aspx.cs">
+      <DependentUpon>EmployeeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement.aspx.designer.cs">
+      <DependentUpon>EmployeeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpSearchBugId.aspx.cs">
+      <DependentUpon>EmpSearchBugId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpSearchBugId.aspx.designer.cs">
+      <DependentUpon>EmpSearchBugId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="firm1.aspx.cs">
+      <DependentUpon>firm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firm1.aspx.designer.cs">
+      <DependentUpon>firm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearch.aspx.cs">
+      <DependentUpon>FrmSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.aspx.designer.cs">
+      <DependentUpon>FrmSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionalArea.aspx.cs">
+      <DependentUpon>FunctionalArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FunctionalArea.aspx.designer.cs">
+      <DependentUpon>FunctionalArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyBugReport.aspx.cs">
+      <DependentUpon>ModifyBugReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyBugReport.aspx.designer.cs">
+      <DependentUpon>ModifyBugReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyBugReports.aspx.cs">
+      <DependentUpon>ModifyBugReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyBugReports.aspx.designer.cs">
+      <DependentUpon>ModifyBugReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyEmployee.aspx.cs">
+      <DependentUpon>ModifyEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyEmployee.aspx.designer.cs">
+      <DependentUpon>ModifyEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyFunctional.aspx.cs">
+      <DependentUpon>ModifyFunctional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyFunctional.aspx.designer.cs">
+      <DependentUpon>ModifyFunctional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyProgram.aspx.cs">
+      <DependentUpon>ModifyProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyProgram.aspx.designer.cs">
+      <DependentUpon>ModifyProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramMaintaince.aspx.cs">
+      <DependentUpon>ProgramMaintaince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramMaintaince.aspx.designer.cs">
+      <DependentUpon>ProgramMaintaince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchBugId.aspx.cs">
+      <DependentUpon>SearchBugId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBugId.aspx.designer.cs">
+      <DependentUpon>SearchBugId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBugReport.aspx.cs">
+      <DependentUpon>SearchBugReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBugReport.aspx.designer.cs">
+      <DependentUpon>SearchBugReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBy Id.aspx.cs">
+      <DependentUpon>SearchBy Id.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBy Id.aspx.designer.cs">
+      <DependentUpon>SearchBy Id.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATE BasedID.aspx.cs">
+      <DependentUpon>UPDATE BasedID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UPDATE BasedID.aspx.designer.cs">
+      <DependentUpon>UPDATE BasedID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployee.aspx.cs">
+      <DependentUpon>UpdateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployee.aspx.designer.cs">
+      <DependentUpon>UpdateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View Bug Report.aspx.cs">
+      <DependentUpon>View Bug Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Bug Report.aspx.designer.cs">
+      <DependentUpon>View Bug Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployee.aspx.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewEmployee.aspx.designer.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFunctional.aspx.cs">
+      <DependentUpon>ViewFunctional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFunctional.aspx.designer.cs">
+      <DependentUpon>ViewFunctional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProgram.aspx.cs">
+      <DependentUpon>ViewProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProgram.aspx.designer.cs">
+      <DependentUpon>ViewProgram.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51137</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

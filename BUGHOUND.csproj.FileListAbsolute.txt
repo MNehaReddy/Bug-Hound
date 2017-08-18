@@ -1,0 +1,11 @@
+D:\Deniss\BUGHOUND\BUGHOUND\bin\BUGHOUND.dll
+D:\Deniss\BUGHOUND\BUGHOUND\bin\BUGHOUND.pdb
+D:\Deniss\BUGHOUND\BUGHOUND\obj\Debug\ResolveAssemblyReference.cache
+D:\Deniss\BUGHOUND\BUGHOUND\obj\Debug\BUGHOUND.dll
+D:\Deniss\BUGHOUND\BUGHOUND\obj\Debug\BUGHOUND.pdb
+D:\raj\projects\MyProjects\BugHound\BugHound\BUGHOUND\bin\BUGHOUND.dll.config
+D:\raj\projects\MyProjects\BugHound\BugHound\BUGHOUND\bin\BUGHOUND.dll
+D:\raj\projects\MyProjects\BugHound\BugHound\BUGHOUND\bin\BUGHOUND.pdb
+D:\raj\projects\MyProjects\BugHound\BugHound\BUGHOUND\obj\Debug\BUGHOUND.dll
+D:\raj\projects\MyProjects\BugHound\BugHound\BUGHOUND\obj\Debug\BUGHOUND.pdb
+D:\raj\projects\MyProjects\BugHound\BugHound\BUGHOUND\obj\Debug\BUGHOUND.csprojResolveAssemblyReference.cache
